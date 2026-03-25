@@ -1,51 +1,41 @@
-# EX 11 C program to convert a given value from binary to decimal using function with return type with out arguments
-## DATE:
-## AIM:
-To write a C  program to convert a given value from binary to decimal using function with return type with out arguments
+# Exp.No:3a
+## STRING - FIND AND REPLACE
 
-## Algorithm
+---
 
-1.Start the program and read the binary number from the user.
+### AIM  
+To write a Python function to accept a string, identify a word to be replaced, and replace it with a new word provided by the user.
 
-2.Call the function convert(n) to convert the binary number into decimal.
+---
 
-3.Inside the function, initialize variables sum = 0 and p = 0 (position).
+### ALGORITHM
 
-4.Extract each digit of the binary number using modulus and multiply it with 
-2p2, then add it to sum and increment p.
+1. Begin the program.  
+2. Input the original string `str1` and the word to be replaced `replace_str`.  
+3. Ask the user to input the new replacement word `str2`.  
+4. Use the `replace()` method in Python to replace all occurrences of `replace_str` in `str1` with `str2`.  
+5. Store the modified string in `str3`.  
+6. Display the original string (`str1`) and the modified string (`str3`).  
+7. Terminate the program.
 
-5.Return the calculated decimal value and display the result.
+---
 
-## Program:
-```c
-#include<stdio.h>
-#include<math.h>
-int convert(int n)
-{
-    int r,sum=0,p=0;
-    while(n>0)
-    {
-    r=n%10;
-    sum=sum+r*pow(2,p);
-    n=n/10;
-    p++;
-    }
-    return sum;
-}
-int main()
-{
-    int n;
-    scanf("%d",&n);
-    int sum=convert(n);
-    printf("%d in binary = %d in decimal",n,sum);
-    return 0;
-}
+### PROGRAM
+
+```python
+#Reg No-212222060013
+#Name - AKSHAIYAN S
+
+def string_length(s):
+    print(f"The length of the string '{s}' is {len(s)}")
+
+# Example usage
+string = input()
+string_length(string)
 ```
 
-## Output:
+### OUTPUT
+<img width="752" height="265" alt="image" src="https://github.com/user-attachments/assets/dfd4a51d-1f51-4bf5-9828-f04c6371bb77" />
 
-<img width="596" height="169" alt="Screenshot 2026-03-19 134125" src="https://github.com/user-attachments/assets/de85df1e-1012-4fe2-bcdf-88348a18414e" />
-
-
-## Result:
-Thus the program was executed and the output was verified successfully.
+### RESULT
+Thus a python program to find the length of the given string has been successfully implemneted.
